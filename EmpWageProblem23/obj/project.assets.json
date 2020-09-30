@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RAJAT-DAMMU\\Desktop\\EmployeeWage\\EmpWageProblem23\\EmpWageProblem23.csproj",
+      "projectUniqueName": "C:\\Users\\RAJAT-DAMMU\\Desktop\\GitProjects\\EmployeeWage\\EmpWageProblem23\\EmpWageProblem23.csproj",
       "projectName": "EmpWageProblem23",
-      "projectPath": "C:\\Users\\RAJAT-DAMMU\\Desktop\\EmployeeWage\\EmpWageProblem23\\EmpWageProblem23.csproj",
+      "projectPath": "C:\\Users\\RAJAT-DAMMU\\Desktop\\GitProjects\\EmployeeWage\\EmpWageProblem23\\EmpWageProblem23.csproj",
       "packagesPath": "C:\\Users\\RAJAT-DAMMU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RAJAT-DAMMU\\Desktop\\EmployeeWage\\EmpWageProblem23\\obj\\",
+      "outputPath": "C:\\Users\\RAJAT-DAMMU\\Desktop\\GitProjects\\EmployeeWage\\EmpWageProblem23\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RAJAT-DAMMU\\AppData\\Roaming\\NuGet\\NuGet.Config",
