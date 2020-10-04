@@ -11,6 +11,7 @@ namespace EmpWageProblem
             c.AddToEmpList("ZS", 20, 10, 50);
             c.AddToEmpList("Flipkart", 40, 5, 60);
             c.CalcAllWages();
+            c.PrintAllWages();
         }
 
 

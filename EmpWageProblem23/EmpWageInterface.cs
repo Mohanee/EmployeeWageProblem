@@ -9,5 +9,6 @@ namespace EmpWageProblem23
         void AddToEmpList(string compName, int wagePerHr, int workingDays, int maxHoursMonthly);
         void CalEmpWage(Employee e);
         void CalcAllWages();
+        void PrintAllWages();
     }
 }

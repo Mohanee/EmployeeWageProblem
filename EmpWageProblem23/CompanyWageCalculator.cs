@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace EmpWageProblem23
@@ -13,6 +14,7 @@ namespace EmpWageProblem23
         public const int no_work_days = 4;
 
         public ArrayList empList;
+        public Dictionary<string, int> CompanyWiseTotalWage = new Dictionary<string, int>();
         int no_companies = 0;
 
         public CompanyWageCalculator()
@@ -54,6 +56,7 @@ namespace EmpWageProblem23
                 Console.WriteLine("Day:" + totalWorkDays + "\tEmp Hrs:" + EmpHrs + "\tDaily Wage:" + dailyWage);
             }
             int totalEmpWage = totalEmpHrs * e.empRate_PerHr;
+            CompanyWiseTotalWage.Add(e.companyName, totalEmpWage);
             Console.WriteLine("Employee wage for company " + e.companyName + " is " + totalEmpWage);
         }
 
@@ -62,6 +65,14 @@ namespace EmpWageProblem23
             for (int i = 0; i < no_companies; i++)
             {
                 CalEmpWage((Employee)empList[i]);
+                Console.WriteLine("\n");
+            }
+        }
+        public void PrintAllWages() 
+        {
+            foreach(KeyValuePair<string, int> kvp in CompanyWiseTotalWage)
+            {
+                Console.WriteLine("Company Name :{0} \t Total Wage : {1}", kvp.Key, kvp.Value);
             }
         }
     }
