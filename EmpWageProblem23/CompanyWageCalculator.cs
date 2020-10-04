@@ -49,8 +49,9 @@ namespace EmpWageProblem23
                         break;
                 }
                 totalEmpHrs += EmpHrs;
-              
-                Console.WriteLine("Day:" + totalWorkDays + "\tEmp Hrs:" + EmpHrs);
+                int dailyWage = EmpHrs * e.empRate_PerHr;
+                e.DailyWage.Add(dailyWage);
+                Console.WriteLine("Day:" + totalWorkDays + "\tEmp Hrs:" + EmpHrs + "\tDaily Wage:" + dailyWage);
             }
             int totalEmpWage = totalEmpHrs * e.empRate_PerHr;
             Console.WriteLine("Employee wage for company " + e.companyName + " is " + totalEmpWage);
