@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EmpWageProblem23
 {
-    class CompanyWageCalculator
+    class CompanyWageCalculator : EmpWageInterface
     {
 
         public const int is_part_time = 1;
