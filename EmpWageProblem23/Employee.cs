@@ -15,6 +15,7 @@ namespace EmpWageProblem23
             this.empRate_PerHr = empRate_PerHr;
             this.working_Hrs = working_Hrs;
             this.max_WorkHrs_Monthly = max_WorkHrs_Monthly;
+            this.DailyWage = new List<int>();
         }
         }
     }
