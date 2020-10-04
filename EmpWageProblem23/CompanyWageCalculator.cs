@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,17 +12,17 @@ namespace EmpWageProblem23
         public const int is_full_time = 2;
         public const int no_work_days = 2;
 
-        public Employee[] empArray;
+        public ArrayList empList;
         int no_companies = 0;
 
         public CompanyWageCalculator()
         {
-            this.empArray = new Employee[5];
+            this.empList = new ArrayList();
         }
 
-        public void AddToEmpArray(string compName, int wagePerHr, int workingDays, int maxHoursMonthly)
+        public void AddToEmpList(string compName, int wagePerHr, int workingDays, int maxHoursMonthly)
         {
-            this.empArray[no_companies] = new Employee(compName, wagePerHr, workingDays, maxHoursMonthly);
+            empList.Add((new Employee(compName, wagePerHr, workingDays, maxHoursMonthly)));
             no_companies++;
         }
 
@@ -58,7 +59,7 @@ namespace EmpWageProblem23
         {
             for (int i = 0; i < no_companies; i++)
             {
-                CalEmpWage(empArray[i]);
+                CalEmpWage((Employee)empArray[i]);
             }
         }
     }
