@@ -7,6 +7,7 @@ namespace EmpWageProblem23
     class Employee
     {
         public string companyName;
+        public List<int> DailyWage;
         public int empRate_PerHr, working_Hrs, max_WorkHrs_Monthly, totalEmployeeWage;
         public Employee(String companyName, int empRate_PerHr, int working_Hrs, int max_WorkHrs_Monthly)
         {

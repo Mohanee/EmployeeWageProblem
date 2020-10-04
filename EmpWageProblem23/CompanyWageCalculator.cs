@@ -10,7 +10,7 @@ namespace EmpWageProblem23
 
         public const int is_part_time = 1;
         public const int is_full_time = 2;
-        public const int no_work_days = 2;
+        public const int no_work_days = 4;
 
         public ArrayList empList;
         int no_companies = 0;
@@ -49,6 +49,7 @@ namespace EmpWageProblem23
                         break;
                 }
                 totalEmpHrs += EmpHrs;
+              
                 Console.WriteLine("Day:" + totalWorkDays + "\tEmp Hrs:" + EmpHrs);
             }
             int totalEmpWage = totalEmpHrs * e.empRate_PerHr;
@@ -59,7 +60,7 @@ namespace EmpWageProblem23
         {
             for (int i = 0; i < no_companies; i++)
             {
-                CalEmpWage((Employee)empArray[i]);
+                CalEmpWage((Employee)empList[i]);
             }
         }
     }
